@@ -1,0 +1,11 @@
+AWS_ACCESS_KEY_ID: enter your access key here
+AWS_SECRET_ACCESS_KEY: enter your AWS secret access key here
+development:
+  AWS_BUCKET: the-name-of-your-bucket-for-development
+  DEVELOPMENT_SECRET_KEY_BASE: your key here
+production:
+  AWS_BUCKET: the-name-of-your-bucket-for-production
+
+test:
+  TEST_SECRET_KEY_BASE: your key here
+

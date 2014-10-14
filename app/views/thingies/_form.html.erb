@@ -11,11 +11,20 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :image %><br>
-    <%= f.text_field :image %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <section class="row">
+    <div class="field">
+      <%= f.label :name %><br>
+      <%= f.text_field :name, label: 'Thingy Name' %>
+    </div>
+
+    <div class="field">
+      <p>Upload an image for this thingy.</p>
+      <%= image_tag(@thingy.image.url) if @thingy.image? %>
+      <%= f.file_field :image %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+  </section>
 <% end %>

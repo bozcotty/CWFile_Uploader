@@ -1,9 +1,8 @@
-<h1>Listing thingies</h1>
+<h1>The List of Thingies</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Image</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -11,7 +10,8 @@
   <tbody>
     <% @thingies.each do |thingy| %>
       <tr>
-        <td><%= thingy.image %></td>
+        <td><%= image_tag thingy.image.small.url %></td>
+        <td><%= thingy.name %></td>
         <td><%= link_to 'Show', thingy %></td>
         <td><%= link_to 'Edit', edit_thingy_path(thingy) %></td>
         <td><%= link_to 'Destroy', thingy, method: :delete, data: { confirm: 'Are you sure?' } %></td>
