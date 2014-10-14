@@ -1,0 +1,2 @@
+module ThingiesHelper
+end
