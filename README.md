@@ -9,11 +9,11 @@ This is a quick Rails application that focuses on making cloud-based image file 
 -You should take strict caution not to let your Amazon secret key become public. (Use the Figaro gem, described below)
 
 #Gems needed:
--carrierwave => 'gem carrierwave'
--mini_magick => 'gem mini_magick'
--fog => 'gem fog'
+- carrierwave => 'gem carrierwave'
+- mini_magick => 'gem mini_magick'
+- fog => 'gem fog'
 
--Note: with mini_magick, you will need the command line application called ImageMagick. So install ImageMagick first:
+- Note: with mini_magick, you will need the command line application called ImageMagick. So install ImageMagick first:
 => $ brew install ImageMagick
 
 
