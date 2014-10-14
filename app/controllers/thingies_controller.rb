@@ -45,13 +45,14 @@ class ThingiesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_thingy
-      @thingy = Thingy.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def thingy_params
-      params.require(:thingy).permit(:name, :image)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_thingy
+    @thingy = Thingy.find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def thingy_params
+    params.require(:thingy).permit(:name, :image)
+  end
 end

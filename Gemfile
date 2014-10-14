@@ -17,4 +17,3 @@ gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 
 ruby '2.1.2'
-
