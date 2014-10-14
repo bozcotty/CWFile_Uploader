@@ -13,9 +13,9 @@ This is a quick Rails application that focuses on making cloud-based image file 
 - mini_magick => 'gem mini_magick'
 - fog => 'gem fog'
 - *Note: with mini_magick, you will need the command line application called ImageMagick. So install ImageMagick first:
-'''
-=> $ brew install ImageMagick
-'''
+
+<tt> $ brew install ImageMagick </tt>
+
 
 
 
